@@ -118,16 +118,16 @@ public void Shoot(Bitmap image)
 
 ## Изглед и упатство
 
-![alt text](https://photos-4.dropbox.com/t/0/AADfuXoNSBIOzLXdbi5c8Gpy0yRs3xN2v6IGymyfFgPzOQ/12/189560432/png/1024x768/3/1399838400/0/2/Capture.PNG/nBsQHd3fK4I5JNJeTl9qyKKe28Pu2yKb-BpTiyGWXNM "Главно мени")
+![alt text](https://dl.dropbox.com/s/5xov7crv8ahw8vu/Capture.PNG "Главно мени")
 >Изглед на главното мени
 
 ![alt text](https://dl.dropbox.com/s/aed26i630cdk2cc/Capture1.PNG "Инструкции")
 >Прозорец со инструкции
 
-![alt text](https://dl-web.dropbox.com/get/Asteroidi/Capture3.PNG?_subject_uid=189560432&w=AABODZ49yGsXac6P8uQenpvhPFuvzB6U0iYj-B9IZw7keA "Нова игра")
+![alt text](https://dl.dropbox.com/s/k4easpzxyp4pnsk/Capture3.PNG "Нова игра")
 >По притискање на копчето Нова игра се појавува прозорец во кој е потребно да се избере бројот на играчи, тежината на играта, името на играчот/играчите и вселенскиот брод. Со притискање на копчето Играј, играта започнува
 
-![alt text](https://dl-web.dropbox.com/get/Asteroidi/Capture4.PNG?_subject_uid=189560432&w=AADJb_-KxAN9XsojZkoUhD4chJF0zZZS60lc4L2oMNuL2g "Игра со 2 играча")
+![alt text](https://dl.dropbox.com/s/gnfxsoedtuvfgtg/Capture4.PNG "Игра со 2 играча")
 >На сликата е прикажана игра на два играча од кои победник ќе биде оној кој ќе освои повеќе поени пред истекување на времето. Доколку тој со повеќе поени ги загуби животите пред да истече времето, тогаш победник е играчот кој останува. Повремено, на одреден број поени се појавуваат пакети кои оној кој што ќе ги собере добива еден живот или пак времето се зголемува за 5 секунди, во зависност од пакетот. Слично е и со еден играч, но таму играчот треба да уништи одреден број астероиди пред да истече времето. Контролите за управување на летала, како и информациите за каков вид бонус носат пакетите се наоѓаат во делот Инструкции, до кој се пристапува од главното мени на играта.
 
 [asteroids]:http://atari.com/arcade#!/arcade/asteroids/play
