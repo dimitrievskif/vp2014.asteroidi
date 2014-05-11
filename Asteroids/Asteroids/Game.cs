@@ -73,6 +73,7 @@ namespace Asteroids
             this.Player2 = Player2;
         }
 
+        // Одредување минимален број поени кои треба да се постигнат во зависност од избраната тежина
         public int GameAim()
         {
             if (Difficulty == 3)
@@ -84,6 +85,8 @@ namespace Asteroids
             return 0;
         }
 
+        /*  Метод за рестартирање на играта, враќање на бројот на поени на 0, чистење на листите со куршуми, пакети и астероиди
+            и запирање на леталото */
         public void RestartGame()
         {
             Score1 = 0;

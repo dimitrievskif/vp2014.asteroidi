@@ -6,6 +6,7 @@ using System.Drawing;
 
 namespace Asteroids
 {
+    // Оваа класа е детално опишана во документацијата прикачена во прилог на проектот
     public class Ship
     {
         public float[] Position { get; private set; }
@@ -46,6 +47,7 @@ namespace Asteroids
 
         }
 
+        /* Метод за ажурирање на позизијата, брзината на движење и ротацијата на леталото */
         public void Update()
         {
             Angle += AngleVelocity;
@@ -53,6 +55,7 @@ namespace Asteroids
             Position[1] = (Position[1] + Velocity[1]) % Form1.HEIGHT;
             if (Thrust)
             {
+                // Претворање на аголот во вектор за одредување на правецот на движење на леталото
                 float[] acc = AdditionalFunctions.angleToVector((float)Math.PI / 180 * Angle);
                 Velocity[0] += acc[0] * 0.1f;
                 Velocity[1] += acc[1] * 0.1f;
@@ -76,6 +79,9 @@ namespace Asteroids
             AngleVelocity -= 2;
         }
 
+        /* Метод кој се повикува кога ќе се притисне контролата за пукање (Space или F)
+           Се одредува правецот во кој треба да се движат куршумите во зависност од ротацијата на леталото и се додаваат во листата
+           куршуми за соодветниот играч */
         public void Shoot(Bitmap image)
         {
             float[] forward = AdditionalFunctions.angleToVector((float)Math.PI / 180 * Angle);

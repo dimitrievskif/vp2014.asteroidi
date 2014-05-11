@@ -73,7 +73,7 @@
             this.lblPoints1.Size = new System.Drawing.Size(59, 13);
             this.lblPoints1.TabIndex = 1;
             this.lblPoints1.Text = "Поени: 0";
-            this.lblPoints1.Click += new System.EventHandler(this.lblPoints1_Click);
+            
             // 
             // lblTime
             // 

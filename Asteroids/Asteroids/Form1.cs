@@ -15,7 +15,7 @@ namespace Asteroids
     {
         public static readonly int WIDTH = 800;
         public static readonly int HEIGHT = 600;
-        public static int Time = 20;
+        public static int Time = 180;
         public static bool MultiPlayer;
         public static int LevelDifficulty;
         public static Bitmap DebrisImage = Properties.Resources.debris2_blue;
@@ -70,6 +70,8 @@ namespace Asteroids
             
         }
 
+        /* Метод за додавање нов астероид во листата RockGroup со случајна позиција и брзина која зависи
+           од бројот на поени на првиот играчот */
         public static void RockSpawner()
         {
             float[] rockPos = new float[] { random.Next(0, WIDTH), random.Next(0, HEIGHT) };
@@ -91,6 +93,7 @@ namespace Asteroids
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            /* Исцртување на позадинската слика и движење на слика со вселенски отпад во позадина*/
             e.Graphics.DrawImage(NebulaImage, 0, 0, NebulaInfo.Size[0], NebulaInfo.Size[1]); 
             e.Graphics.DrawImage(DebrisImage, debris1PosX, 0, DebrisInfo.Size[0], DebrisInfo.Size[1]);
             e.Graphics.DrawImage(DebrisImage, debris2PosX, 0, DebrisInfo.Size[0], DebrisInfo.Size[1]);
@@ -101,6 +104,8 @@ namespace Asteroids
                 debris1PosX = 615;
             if (debris2PosX == -600)
                 debris2PosX = 615;
+
+            
             if (!TheGame.Multiplayer)
             {
                 lblLives2.Visible = false;
@@ -110,7 +115,6 @@ namespace Asteroids
 
             if (TheGame.Started)
             {
-
                 
                 ProcessSpriteGroup(e.Graphics, TheGame.RockGroup);
                 ProcessSpriteGroup(e.Graphics, TheGame.ExplosionGroup);
@@ -121,8 +125,8 @@ namespace Asteroids
                     TheGame.Ship1.Draw(e.Graphics);
                     TheGame.Ship1.Update();
 
-
-
+                    /* Проверка на услови за завршуавње на играта и намалување на бројот на животи во случај на
+                       судир меѓу леталото на првиот играч и астероид */
                     if (GroupCollide(TheGame.RockGroup, TheGame.Ship1) > 0)
                     {
                         TheGame.Lifes1 -= 1;
@@ -145,15 +149,14 @@ namespace Asteroids
                         else
                             lblLives1.Text = "Животи: " + TheGame.Lifes1;
                     }
+                    /* Појава на пакет по постигнувае одреден број поени */
                     if (TheGame.Score1 != 0 && TheGame.Score1 % TheGame.PackageFrequency == 0 && TheGame.PackageGroup.Count < 1)
                     {
                         TheGame.PackageFrequency += 10;
                         int rand = random.Next(0, 4);
                         if (rand == 0 || rand == 1)
                         {
-                            
                             TheGame.PackageGroup.Add(new Sprite(new float[] { (float)random.Next(0, WIDTH - 10), 0 }, new float[] { 0, 0 }, 0, 0, PackageTime, PackageInfo));
-
                         }
                         else if (rand == 2 || rand == 3)
                             TheGame.PackageGroup.Add(new Sprite(new float[] { (float)random.Next(0, WIDTH - 10), 0 }, new float[] { 0, 0 }, 0, 0, PackageLife, PackageInfo));
@@ -162,7 +165,8 @@ namespace Asteroids
                     lblPoints1.Text = "Поени: " + TheGame.Score1;
                    
                 }
-
+                /* Проверка на услови за завршуавње на играта и намалување на бројот на животи во случај на
+                       судир меѓу леталото на вториот играч и астероид */
                 if (TheGame.Multiplayer && TheGame.Lifes2 >= 0)
                 {
                     ProcessSpriteGroup(e.Graphics, TheGame.MissileGroup2);
@@ -189,7 +193,7 @@ namespace Asteroids
                     
                 }
 
-               
+                /* Појава на пакет по постигнувае одреден број поени */
                 if (TheGame.Score2 != 0 && TheGame.Score2 % TheGame.PackageFrequency == 0 && TheGame.PackageGroup.Count < 1)
                 {
                     TheGame.PackageFrequency += 10;
@@ -211,6 +215,7 @@ namespace Asteroids
             
         }
 
+        /* Ажурирање на секој од објектите во листата проследена како аргумент */
         public void ProcessSpriteGroup(Graphics g, List<Sprite> group)
         {
 
@@ -222,6 +227,8 @@ namespace Asteroids
             }
         }
 
+        /* Придвижување на пакет и проверка дали се судира со некое од леталата и соодветно ажурирање на времето или животите,
+           во зависност од видот, или пак излегува надвор од границите на прозорецот */
         public void ProcessPackageGroup(Graphics g, List<Sprite> group)
         {
 
@@ -261,7 +268,7 @@ namespace Asteroids
             }
         }
 
-
+        /* Контроли за управување со леталата */
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
@@ -318,6 +325,8 @@ namespace Asteroids
             Invalidate();
         }
 
+        /* Повик на методот за додавање астероиди во листата и проверка за истекување на времето. 
+           Доколку времето истече се повикува функција која нуди можност за рестартирање на играта */
         private void TimerRockSpawn_Tick(object sender, EventArgs e)
         {
             RockSpawner();
@@ -348,6 +357,7 @@ namespace Asteroids
             }
         }
 
+        /* Проверка за судир меѓу секој од елементите од листата и соодветниот објект */
         private int GroupCollide(List<Sprite> group, object obj)
         {
             int total = 0;
@@ -362,6 +372,7 @@ namespace Asteroids
 
         }
 
+        /* Проверка за судир меѓу елементите од двете листи */
         private int GroupGroupCollide(List<Sprite> group1, List<Sprite> group2)
         {
             int total = 0;
@@ -380,6 +391,7 @@ namespace Asteroids
             return total;
         }
 
+        /* Појава на прозорец со можност за рестарирање на играта и порака која зависи од постигнатиот резултат */
         private void ChooseToRestartSingle(bool Success, int Points)
         {
             DialogResult dr = DialogResult.None;
@@ -443,9 +455,6 @@ namespace Asteroids
                 this.Close();
         }
 
-        private void lblPoints1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

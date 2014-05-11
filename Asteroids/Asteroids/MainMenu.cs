@@ -40,10 +40,10 @@ namespace Asteroids
             animateBg();
             animateShip();
             animateLogo();
-            //animateMenu();
+            ;
             
         }
-
+        // Придвижување на различни елементи од менито, движење на вселенскиот брод горе-долу, движење на позадината и анимација на логото
         private void animateShip()
         {
             ShipPos.Y += move;
@@ -67,21 +67,14 @@ namespace Asteroids
                 LogoPos.X += 30;
         }
 
-        private void animateMenu()
-        {
-            if (NewGamePos.Y > 340)
-                NewGamePos.Y -= 10;
-            if (InstructionsPos.Y > 408)
-                InstructionsPos.Y -= 10;
-            newGame.Location = NewGamePos;
-            instructions.Location = InstructionsPos;
-        }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             Invalidate();
         }
 
+        // Прикажување на нова слика при придвижување на глушецот над секоја од опциите
         private void newGame_MouseHover(object sender, EventArgs e)
         {
             newGame.Image = Properties.Resources.newGameGlow;

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Asteroids
 {
+    // Информации за димензиите, центарот, радиусот, животниот век и дали треба да се анимира сликата
     public class ImageInfo
     {
         public int[] Center { get; private set; }
