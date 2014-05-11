@@ -132,6 +132,7 @@ public void Shoot(Bitmap image)
 
 ### Изработил
 Филип Димитриевски 
+
 Индекс: 121105
 
 [asteroids]:http://atari.com/arcade#!/arcade/asteroids/play
