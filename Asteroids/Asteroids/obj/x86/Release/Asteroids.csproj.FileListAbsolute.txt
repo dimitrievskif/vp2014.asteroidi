@@ -1,0 +1,9 @@
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\bin\Release\Asteroids.exe
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\bin\Release\Asteroids.pdb
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Release\Asteroids.Form1.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Release\Asteroids.MainMenu.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Release\Asteroids.Properties.Resources.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Release\Asteroids.csproj.GenerateResource.Cache
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Release\Asteroids.exe
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Release\Asteroids.pdb
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Release\Asteroids.NewGame.resources

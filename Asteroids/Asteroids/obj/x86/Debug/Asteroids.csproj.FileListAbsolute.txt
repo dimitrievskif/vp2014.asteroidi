@@ -1,0 +1,19 @@
+C:\Users\Filip\AppData\Local\Temporary Projects\Asteroids\obj\x86\Debug\Asteroids.Form1.resources
+C:\Users\Filip\AppData\Local\Temporary Projects\Asteroids\obj\x86\Debug\Asteroids.csproj.GenerateResource.Cache
+C:\Users\Filip\AppData\Local\Temporary Projects\Asteroids\bin\Debug\Asteroids.exe
+C:\Users\Filip\AppData\Local\Temporary Projects\Asteroids\bin\Debug\Asteroids.pdb
+C:\Users\Filip\AppData\Local\Temporary Projects\Asteroids\obj\x86\Debug\Asteroids.Properties.Resources.resources
+C:\Users\Filip\AppData\Local\Temporary Projects\Asteroids\obj\x86\Debug\Asteroids.exe
+C:\Users\Filip\AppData\Local\Temporary Projects\Asteroids\obj\x86\Debug\Asteroids.pdb
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.exe
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.pdb
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\bin\Debug\Asteroids.exe
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\bin\Debug\Asteroids.pdb
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.Form1.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.Properties.Resources.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.csproj.GenerateResource.Cache
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.MainMenu.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.csprojResolveAssemblyReference.cache
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.NewGame.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.Instructions.resources
+C:\Users\Filip\documents\visual studio 2010\Projects\Asteroids\Asteroids\obj\x86\Debug\Asteroids.csproj.ResolveComReference.cache
