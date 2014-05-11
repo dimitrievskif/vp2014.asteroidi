@@ -121,7 +121,7 @@ public void Shoot(Bitmap image)
 ![alt text](https://photos-4.dropbox.com/t/0/AADfuXoNSBIOzLXdbi5c8Gpy0yRs3xN2v6IGymyfFgPzOQ/12/189560432/png/1024x768/3/1399838400/0/2/Capture.PNG/nBsQHd3fK4I5JNJeTl9qyKKe28Pu2yKb-BpTiyGWXNM "Главно мени")
 >Изглед на главното мени
 
-![alt text](https://dl-web.dropbox.com/get/Asteroidi/Capture1.PNG?_subject_uid=189560432&w=AABNL_RqaNI-cF9d8w82NegdfxWlerXPKCaaE_YuZYOFWw "Инструкции")
+![alt text](https://dl.dropbox.com/s/aed26i630cdk2cc/Capture1.PNG "Инструкции")
 >Прозорец со инструкции
 
 ![alt text](https://dl-web.dropbox.com/get/Asteroidi/Capture3.PNG?_subject_uid=189560432&w=AABODZ49yGsXac6P8uQenpvhPFuvzB6U0iYj-B9IZw7keA "Нова игра")
